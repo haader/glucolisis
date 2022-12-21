@@ -1,4 +1,4 @@
-const enzimas=["Hexoquinaza","Fosfogluco isomerasa","Fosfofructo quinasa","Fructosa bisfosfato aldolasa","Triosa-fosfato isomerasa","Gliceraldehido fosfato deshidrogenasa","Fosfogliceratoquinasa","Fosfoglicerato mutasa","Enolasa","Piruvato quinasa"];
+const enzimas=["citrato_sintasa","aconitasa","aconitasa","isocitrato deshidrogenasa","alfa_cetoglutarato_deshidrogenasa","succinil_CoA_sintetasa","succinato_deshidrogenasa","fumarasa","malato_deshidrogenasa",];
 var correcto=0;
 //BORRAR
 enzimas.forEach((element) => {
@@ -16,9 +16,9 @@ enzimas.forEach((element) => {
 
 //para practicar
 //lista con numeros de la ubicaciones del array (para los btn)
-var lista_enzimas=[0,1,2,3,4,5,6,7,8,9];
+var lista_enzimas=[0,1,2,3,4,5,6,7,8];
 //lista con numeros de la ubicaciones del array (para los textos)
-var orden_enzimas=[0,1,2,3,4,5,6,7,8,9];
+var orden_enzimas=[0,1,2,3,4,5,6,7,8];
 //desordenamos el orden del juego para que sea diferente en cada inicio de la página
 orden_enzimas=orden_enzimas.sort(function() {return Math.random()-0.5});
 

@@ -1,14 +1,14 @@
-const enzimas=["Hexoquinaza","Fosfogluco isomerasa","Fosfofructo quinasa","Fructosa bisfosfato aldolasa","Triosafosfato isomerasa","Gliceraldehido fosfato deshidrogenasa","Fosfogliceratoquinasa","Fosfoglicerato mutasa","Enolasa","Piruvato quinasa"]
+const enzimas=["citrato_sintasa","aconitasa","isocitrato deshidrogenasa","alfa_cetoglutarato_deshidrogenasa","succinil_CoA_sintetasa","succinato_deshidrogenasa","fumarasa","malato_deshidrogenasa",];
 
-const moleculas=["glucosa","glucosa_6_fosfato","fructosa_6_fosfato","fructosa_1_6_bifosfato","dihidroxicetona_3_fosfato","gliceraldehido_3_fosfato","1_3_bifosfoglicerato","3_fosfoglicerato","2_fosfoglicerato","fosfoenolpiruvato","piruvato"];
+const moleculas=["Acetil_CoA","citrato","cis_aconitato","isocitrato","alfa_cetoglutarato","succinil_CoA","succinato","fumarato","malato","oxalacetato"];
 
 var bolean_molecula1=false;
 var bolean_enzima=false;
 var bolean_molecula2=false;
 var estado=0;
 
-var lista_m=[0,1,2,3,4,5,6,7,8,9,10];
-var lista_e=[0,1,2,3,4,5,6,7,8,9];
+var lista_m=[0,1,2,3,4,5,6,7,8,9];
+var lista_e=[0,1,2,3,4,5,6,7,8];
 
 cargarProceso(estado);
 
@@ -18,7 +18,7 @@ function cargarProceso(count){
         
         <div class="column" id="column1" onclick='selectMolecula(1,${count})'>
              
-            <img src="img/glucolisis/${moleculas[count]}.png" alt="" id="imagen">
+            <img src="krebs/${moleculas[count]}.png" alt="" id="imagen">
             <span class="texto" id="name_molecula1">Nombre 1</span>
         </div>
 
@@ -29,7 +29,7 @@ function cargarProceso(count){
 
         <div class="column" id="column2" onclick='selectMolecula(2,${count+1})'>
              
-            <img src="img/glucolisis/${moleculas[count+1]}.png" alt="" id="imagen">
+            <img src="krebs/${moleculas[count+1]}.png" alt="" id="imagen">
             <span class="texto" id="name_molecula2">Nombre 2</span>
         </div>
         
