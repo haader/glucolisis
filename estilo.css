@@ -13,6 +13,7 @@ body{
     background: green;
     gap: 2rem;
     border-radius: 10px;
+    justify-content: center;
 
 }
 .img_perfil{
@@ -29,6 +30,24 @@ body{
     position: absolute;
     width: 40px;
     height: 40px;
+}
+
+.href{
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    background: rebeccapurple;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 0.25rem;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+.href a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
 }
 
 .container{
